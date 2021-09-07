@@ -1,0 +1,29 @@
+2021-08-26T08:32:52.993333700 : Item Lays bought.
+2021-08-26T08:34:44.435506100 : Item Water bought.
+2021-08-26T08:35:40.838592700 : Item Water bought.
+2021-08-26T08:35:57.381688800 : Item Kitkat bought.
+2021-08-26T08:49:29.120783100 : Item Dry Nuts bought.
+2021-08-26T08:59:42.125911100 : Item Kitkat bought.
+2021-08-26T09:22:33.023543800 : Item Sprite bought.
+2021-08-26T09:36:36.092299900 : Item Mountain Dew bought.
+2021-08-26T09:36:55.476433300 : Item Lays bought.
+2021-08-26T09:44:47.190084800 : Item Coke bought.
+2021-08-26T09:57:22.537375400 : Item Kitkat bought.
+2021-08-26T09:58:25.186404700 : Item Kitkat bought.
+2021-08-26T09:59:58.358307400 : Item Kitkat bought.
+2021-08-28T14:37:48.489555900 : Item Mountain Dew bought.
+2021-08-28T14:39:15.983916700 : Item Water bought.
+2021-08-28T20:41:18.302157500 : Item Sprite bought.
+2021-08-29T20:43:04.189090900 : Item Lays bought.
+2021-08-29T21:09:06.978405200 : Item Water bought.
+2021-08-29T22:36:30.269700500 : Item Sprite bought.
+2021-08-29T22:42:42.131096 : Item Water bought.
+2021-09-01T19:57:16.749247 : Item Dry Nuts bought.
+2021-09-01T19:57:41.519072100 : Item Water bought.
+2021-09-01T20:27:00.782604400 : Item Dry Nuts bought.
+2021-09-02T07:34:37.395254300 : Item Water bought.
+2021-09-02T07:40:11.060818 : Item Dry Nuts bought.
+2021-09-02T07:48:04.129234900 : Item Dry Nuts bought.
+2021-09-02T08:13:41.933695100 : Item Dry Nuts bought.
+2021-09-02T08:22:31.517111400 : Item Dry Nuts bought.2021-09-02T08:30:12.141530400 : Item Coke bought.
+2021-09-02T08:43:31.690494 : Item Dry Nuts bought.

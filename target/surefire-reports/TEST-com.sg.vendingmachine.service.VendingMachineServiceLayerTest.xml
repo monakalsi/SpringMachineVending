@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="5" name="com.sg.vendingmachine.service.VendingMachineServiceLayerTest" time="0" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.11+9"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sembh\Documents\Repo1\Java-oop\classwork\VendingMachine"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\sembh\Documents\Repo1\Java-oop\classwork\VendingMachine"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.11+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\sembh\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspoy;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;c:\program files\java\jdk-11.0.1;C:\Users\sembh\AppData\Local\Microsoft\WindowsApps;;C:\Users\sembh\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\sembh"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="sembh"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.sg.vendingmachine.service.VendingMachineServiceLayerTest" name="com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testGetItem" time="0">
+    <failure message="-_- Could not load reciept data into memory." type="com.sg.vendingmachine.dao.VendingMachinePersistenceException">com.sg.vendingmachine.dao.VendingMachinePersistenceException: -_- Could not load reciept data into memory.
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:70)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.getItem(VendingMachineDaoFileImpl.java:47)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerImpl.getItem(VendingMachineServiceLayerImpl.java:45)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testGetItem(VendingMachineServiceLayerTest.java:104)
+Caused by: java.io.FileNotFoundException: TESTreciept.txt (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at java.base/java.io.FileReader.&lt;init&gt;(FileReader.java:60)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:66)
+	... 21 more
+</failure>
+  </testcase>
+  <testcase classname="com.sg.vendingmachine.service.VendingMachineServiceLayerTest" name="com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testPurchaseItem" time="0">
+    <failure message="-_- Could not load reciept data into memory." type="com.sg.vendingmachine.dao.VendingMachinePersistenceException">com.sg.vendingmachine.dao.VendingMachinePersistenceException: -_- Could not load reciept data into memory.
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:70)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.getItem(VendingMachineDaoFileImpl.java:47)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerImpl.buyItem(VendingMachineServiceLayerImpl.java:54)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testPurchaseItem(VendingMachineServiceLayerTest.java:112)
+Caused by: java.io.FileNotFoundException: TESTreciept.txt (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at java.base/java.io.FileReader.&lt;init&gt;(FileReader.java:60)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:66)
+	... 21 more
+</failure>
+  </testcase>
+  <testcase classname="com.sg.vendingmachine.service.VendingMachineServiceLayerTest" name="com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testPurchaseItemInsufficientFundsExp" time="0">
+    <failure message="-_- Could not load reciept data into memory." type="com.sg.vendingmachine.dao.VendingMachinePersistenceException">com.sg.vendingmachine.dao.VendingMachinePersistenceException: -_- Could not load reciept data into memory.
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:70)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.getItem(VendingMachineDaoFileImpl.java:47)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerImpl.buyItem(VendingMachineServiceLayerImpl.java:54)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testPurchaseItemInsufficientFundsExp(VendingMachineServiceLayerTest.java:119)
+Caused by: java.io.FileNotFoundException: TESTreciept.txt (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at java.base/java.io.FileReader.&lt;init&gt;(FileReader.java:60)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:66)
+	... 21 more
+</failure>
+  </testcase>
+  <testcase classname="com.sg.vendingmachine.service.VendingMachineServiceLayerTest" name="com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testGetAllItems" time="0">
+    <failure message="-_- Could not load reciept data into memory." type="com.sg.vendingmachine.dao.VendingMachinePersistenceException">com.sg.vendingmachine.dao.VendingMachinePersistenceException: -_- Could not load reciept data into memory.
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:70)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.getAllItems(VendingMachineDaoFileImpl.java:40)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerImpl.getAllItems(VendingMachineServiceLayerImpl.java:39)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testGetAllItems(VendingMachineServiceLayerTest.java:95)
+Caused by: java.io.FileNotFoundException: TESTreciept.txt (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at java.base/java.io.FileReader.&lt;init&gt;(FileReader.java:60)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:66)
+	... 21 more
+</failure>
+  </testcase>
+  <testcase classname="com.sg.vendingmachine.service.VendingMachineServiceLayerTest" name="com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testNoInventoryExp" time="0">
+    <failure message="-_- Could not load reciept data into memory." type="com.sg.vendingmachine.dao.VendingMachinePersistenceException">com.sg.vendingmachine.dao.VendingMachinePersistenceException: -_- Could not load reciept data into memory.
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:70)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.getItem(VendingMachineDaoFileImpl.java:47)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerImpl.buyItem(VendingMachineServiceLayerImpl.java:54)
+	at com.sg.vendingmachine.service.VendingMachineServiceLayerTest.testNoInventoryExp(VendingMachineServiceLayerTest.java:127)
+Caused by: java.io.FileNotFoundException: TESTreciept.txt (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at java.base/java.io.FileReader.&lt;init&gt;(FileReader.java:60)
+	at com.sg.vendingmachine.dao.VendingMachineDaoFileImpl.loadReciept(VendingMachineDaoFileImpl.java:66)
+	... 21 more
+</failure>
+  </testcase>
+</testsuite>
