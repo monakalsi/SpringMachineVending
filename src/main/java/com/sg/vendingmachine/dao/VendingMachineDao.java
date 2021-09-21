@@ -5,7 +5,7 @@
  */
 package com.sg.vendingmachine.dao;
 
-import com.monkalsi.vendingmachine.dto.Item;
+import com.sg.vendingmachine.dto.Item;
 
 import java.util.List;
 

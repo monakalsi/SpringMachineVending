@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.monkalsi.vendingmachine.dto;
+package com.sg.vendingmachine.dto;
 
 import java.math.BigDecimal;
 
@@ -12,20 +12,7 @@ import java.math.BigDecimal;
  * @author sembh
  */
 public class Change {
-    private int denom; 
-	private String name;
-	private Change(String name, int denom){ 
-		this.name = name; this.denom = denom; 
-	} 
-
-    public Change() {
-    }
-	public int getDenom(){ 
-		return denom; 
-		} 
-	public String getName(){ 
-		return name; 
-	} 
+  
 
     Item item;
 
@@ -54,7 +41,7 @@ public class Change {
         pennies = 0;
         
         while (myChange.floatValue() > 0) {
-            System.out.println(myChange);
+            
             { 
                 if (myChange.floatValue() >= 100) {
                   myChange =  myChange.subtract(oneHundread);

@@ -5,7 +5,7 @@
  */
 package com.sg.vendingmachine.service;
 
-import com.monkalsi.vendingmachine.dto.Item;
+import com.sg.vendingmachine.dto.Item;
 import com.sg.vendingmachine.dao.VendingMachinePersistenceException;
 import java.math.BigDecimal;
 import java.util.List;
@@ -27,7 +27,6 @@ public interface VendingMachineServiceLayer {
             VendingMachinePersistenceException,
             InsufficientFundsException, 
             NoItemInventoryException;
-
-       
+      
     
 }

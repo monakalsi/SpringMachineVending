@@ -5,7 +5,7 @@
  */
 package com.sg.vendingmachine.dao;
 
-import com.monkalsi.vendingmachine.dto.Item;
+import com.sg.vendingmachine.dto.Item;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,18 +15,20 @@ import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.math.BigDecimal;
 import java.util.List;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
  * @author sembh
  */
 public class VendingMachineDaoTest {
+    
+    
     
     VendingMachineDao dao = new VendingMachineDaoFileImpl("TESTreciept.txt");
     File file = new File("TESTreciept.txt");
@@ -37,36 +39,30 @@ public class VendingMachineDaoTest {
     public VendingMachineDaoTest() {
     }
     
-    @BeforeAll
+    @BeforeClass
     public static void setUpClass() {
+        
     }
     
-    @AfterAll
+    @AfterClass
     public static void tearDownClass() {
     }
     
-     @BeforeAll
+    @Before
     public void setUp() throws UnsupportedEncodingException, IOException {
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("TESTreciept.txt"), "utf-8"))) {
-            writer.write("1::Water::1.25::10"
-                    + "\n2::Sprite::1.75::11"
-                    + "\n3::Mountain Dew::3.75::4"
-            + "\n4::Coke::2.50::11"
-            +"\n5::Kitkat::1.25::0"
-            +"\n6::Dry Nuts::2.40::13"
-            +"\n7::Lays::2.25::7");
+            writer.write("1::Coke::1.50::10"
+                    + "\n2::Sprite::.75::8"
+                    + "\n3::CherryCoke::1.00::6");
         }
         
-        
-     
-        
-        item.setItemName("Water");
+        item.setItemName("Coke");
         item.setItemPrice(new BigDecimal ("1.50"));
         item.setItemQuantity(10);
     }
     
-    @AfterAll
+    @After
     public void tearDown() {
     
     file.delete();
@@ -82,29 +78,29 @@ public class VendingMachineDaoTest {
         }
     }
 
-    
-     // Test of getAllItems method, of class VendingMachineDao.
-     
+    /**
+     * Test of getAllItems method, of class VendingMachineDao.
+     */
     @Test
     public void testListAllItems() throws Exception {
         List<Item> allItems = dao.getAllItems();
         assertEquals(3, allItems.size());
     }
 
-    
-     //Test of getItem method, of class VendingMachineDao.
-     
+    /**
+     * Test of getItem method, of class VendingMachineDao.
+     */
     @Test
     public void testGetItem() throws Exception {
         
         assertEquals(item, dao.getItem("1"));
     }
 
-    
-     // Test of purchaseItem method, of class VendingMachineDao.
-     
+    /**
+     * Test of buyItem method, of class VendingMachineDao.
+     */
     @Test
-    public void testPurchaseItem() throws Exception {
+    public void testBuyItem() throws Exception {
         dao.buyItem("1");
         assertEquals(9, dao.getItem("1").getItemQuantity());
     }

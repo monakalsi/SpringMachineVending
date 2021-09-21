@@ -27,3 +27,57 @@
 2021-09-02T08:13:41.933695100 : Item Dry Nuts bought.
 2021-09-02T08:22:31.517111400 : Item Dry Nuts bought.2021-09-02T08:30:12.141530400 : Item Coke bought.
 2021-09-02T08:43:31.690494 : Item Dry Nuts bought.
+2021-09-15T21:03:17.815940900 : Item Water bought.
+2021-09-15T21:09:11.483239400 : Item Mountain Dew bought.
+2021-09-15T21:09:30.243756100 : Item Water bought.
+2021-09-15T21:26:02.447964600 : Item Water bought.
+2021-09-15T21:28:19.693517300 : Item Water bought.
+2021-09-15T21:29:51.158200200 : Item Water bought.
+2021-09-15T21:35:41.582187700 : Item Water bought.
+2021-09-15T21:40:09.235094500 : Item Dry Nuts bought.
+2021-09-15T22:07:25.395306 : Item Sprite bought.
+2021-09-15T22:22:36.613036900 : Item Sprite bought.
+2021-09-15T22:25:38.322645400 : Item Sprite bought.
+2021-09-15T22:41:13.880533100 : Item Dry Nuts bought.
+2021-09-16T06:34:38.976078800 : Item Coke bought.
+2021-09-16T07:37:22.746647800 : Item Sprite bought.
+2021-09-16T10:18:59.358722 : Item Lays bought.
+2021-09-18T18:33:11.435424300 : Item Sprite bought.
+2021-09-18T18:33:33.096788700 : Item Water bought.
+2021-09-19T21:09:22.517884900 : Item Water bought.
+2021-09-19T21:09:22.533508800 : Item Water bought.
+2021-09-19T21:13:33.189767800 : Item Water bought.
+2021-09-19T21:13:33.199583300 : Item Water bought.
+2021-09-19T21:14:28.435695800 : Item Water bought.
+2021-09-19T21:14:28.445579200 : Item Water bought.
+2021-09-19T21:41:10.525685200 : Item Water bought.
+2021-09-19T21:41:10.533954300 : Item Water bought.
+2021-09-19T21:43:26.136175400 : Item Water bought.
+2021-09-19T21:43:26.136175400 : Item Water bought.
+2021-09-19T21:45:54.066455600 : Item Water bought.
+2021-09-19T21:45:54.083153 : Item Water bought.
+2021-09-19T21:49:03.013458200 : Item Water bought.
+2021-09-19T21:49:03.013458200 : Item Water bought.
+2021-09-19T21:52:21.330394800 : Item Coke bought.
+2021-09-19T21:52:21.330394800 : Item Coke bought.
+2021-09-19T21:52:58.127096300 : Item Coke bought.
+2021-09-19T21:52:58.135726600 : Item Coke bought.
+2021-09-19T21:53:35.901536900 : Item Coke bought.
+2021-09-19T22:02:15.351323900 : Item Coke bought.
+2021-09-19T22:02:15.351323900 : Item Coke bought.
+2021-09-19T22:04:32.850306500 : Item Coke bought.
+2021-09-19T22:04:32.858522600 : Item Coke bought.
+2021-09-20T07:33:35.696760800 : Item Coke bought.
+2021-09-20T07:33:35.726765800 : Item CherryCoke bought.
+2021-09-20T07:34:23.383958500 : Item Coke bought.
+2021-09-20T07:34:23.416922600 : Item CherryCoke bought.
+2021-09-20T08:01:11.898445900 : Item Coke bought.
+2021-09-20T08:06:00.171531500 : Item Mountain Dew bought.
+2021-09-20T08:14:39.981203600 : Item Water bought.
+2021-09-20T08:14:40.029473600 : Item Cold Coffee bought.
+2021-09-20T08:25:08.379467600 : Item Water bought.
+2021-09-20T08:25:08.397600200 : Item Cold Coffee bought.
+2021-09-20T08:35:55.357193100 : Item Water bought.
+2021-09-20T08:35:55.389789700 : Item Cold Coffee bought.
+2021-09-20T09:02:07.467782600 : Item Water bought.
+2021-09-20T09:02:07.502686200 : Item Cold Coffee bought.

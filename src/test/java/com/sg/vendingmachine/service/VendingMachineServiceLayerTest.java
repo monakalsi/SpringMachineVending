@@ -5,12 +5,9 @@
  */
 package com.sg.vendingmachine.service;
 
-import com.monkalsi.vendingmachine.dto.Change;
-import com.monkalsi.vendingmachine.dto.Item;
-import com.sg.vendingmachine.dao.VendingMachineAuditDao;
-import com.sg.vendingmachine.dao.VendingMachineAuditDaoFileImpl;
 import com.sg.vendingmachine.dao.VendingMachineDao;
 import com.sg.vendingmachine.dao.VendingMachineDaoFileImpl;
+import com.sg.vendingmachine.dto.Item;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,59 +18,62 @@ import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.math.BigDecimal;
 import java.util.List;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
  * @author sembh
  */
 public class VendingMachineServiceLayerTest {
-     VendingMachineDao dao = new VendingMachineDaoFileImpl("TESTreciept.txt");
-    File file = new File("TESTreciept.txt");
     
-    VendingMachineAuditDao auditDao = new VendingMachineAuditDaoFileImpl();
-    Change change = new Change();
-    VendingMachineServiceLayer service = new VendingMachineServiceLayerImpl(dao, auditDao, change);
+     
+    
+    VendingMachineDao dao = new VendingMachineDaoFileImpl("TESTreciept.txt");
+    
+    File file = new File("TESTreciept.txt");
     Item item = new Item("1");
+//    VendingMachineAuditDao auditDao = new VendingMachineAuditDaoFileImpl();
+//    Change change = new Change();
+//    VendingMachineServiceLayer service = new VendingMachineServiceLayerImpl(dao, auditDao, change);
+   
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    VendingMachineServiceLayer service = ctx.getBean("serviceLayer", VendingMachineServiceLayer.class);
     
     public VendingMachineServiceLayerTest() {
-        
+       
     }
     
-    @BeforeAll
+    @BeforeClass
     public static void setUpClass() {
     }
     
-    @AfterAll
+    @AfterClass
     public static void tearDownClass() {
     }
     
-   @BeforeAll
+    @Before
     public void setUp() throws UnsupportedEncodingException, FileNotFoundException, IOException {
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("TESTreciept.txt"), "utf-8"))) {
             writer.write("1::Water::1.50::10"
-                    + "\n2::Sprite::1.75::10"
-                    + "\n3::Mountain Dew::1.75::4"
-            + "\n4::Coke::1.50::10"
-            +"\n5::Kitkat::1.25::0"
-            +"\n6::Dry Nuts::2.00::8"
-            +"\n7::Lays::1.25::7");
+                    + "\n2::EnergyDrink::3.75::8"
+                    + "\n3::ColdCoffee::2.00::0");
+            
+            
         }
-    
-        
-        
         item.setItemName("Water");
         item.setItemPrice(new BigDecimal ("1.50"));
         item.setItemQuantity(10);
     }
     
-    @AfterAll
+    @After
     public void tearDown() {
         file.delete();
     
@@ -89,15 +89,17 @@ public class VendingMachineServiceLayerTest {
 
     /**
      * Test of getAllItems method, of class VendingMachineServiceLayer.
+     * @throws java.lang.Exception
      */
     @Test
     public void testGetAllItems() throws Exception {
         List<Item> allItems = service.getAllItems();
-        assertEquals(7, allItems.size());
+        assertEquals(3, allItems.size());
     }
 
     /**
      * Test of getItem method, of class VendingMachineServiceLayer.
+     * @throws java.lang.Exception
      */
     @Test
     public void testGetItem() throws Exception {
@@ -106,11 +108,12 @@ public class VendingMachineServiceLayerTest {
 
     /**
      * Test of purchaseItem method, of class VendingMachineServiceLayer.
+     * @throws java.lang.Exception
      */
     @Test
     public void testPurchaseItem() throws Exception {
-      String buyItem = service.buyItem("1", new BigDecimal("2.00"));
-       assertEquals( "Your recieving 0 Dollars \nYour recieving 2 Quarters \nYour recieving 0 Dimes \nYour recieving 0 Nickels \nYour recieving 0 Pennies", buyItem);
+      String purchaseItem = service.buyItem("1", new BigDecimal("2.00"));
+       assertEquals( "Your recieving 0 Dollars \nYour recieving 2 Quarters \nYour recieving 0 Dimes \nYour recieving 0 Nickels \nYour recieving 0 Pennies", purchaseItem);
     }
     
     @Test 
